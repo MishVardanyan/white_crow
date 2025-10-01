@@ -8,14 +8,12 @@ class LoadingScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Լոգո
             Image.asset(
               'assets/images/crow.jpg',
-              width: 150, // Կարգավորեք ըստ ձեր պատկերների չափերի
+              width: 150, 
               height: 150,
             ),
             SizedBox(height: 20),
-            // Խրախուսող արտահայտություն
             Text(
               '“Единственная известная мне роскошь – роскошь человеческого общения.”',
               style: TextStyle(
@@ -26,7 +24,6 @@ class LoadingScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 10),
-            // Հեղինակ
             Text(
               'Антуан де Сент-Экзюпери',
               style: TextStyle(
@@ -36,7 +33,6 @@ class LoadingScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 30),
-            // Լոադեր
             CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
             ),
